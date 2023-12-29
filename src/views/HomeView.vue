@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="HomePageImg" alt="" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTti3Nexk4BEz1YHXD-bu2VGW8ToMZ3UYS8cpFJAh4QlXuTniWDFmcbip-aAxHTqQOs3008f6XyKtuQESMCz---IulT=s1600">
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
@@ -16,3 +16,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.HomePageImg{
+    width: 500px;
+    height: 450px;
+    display: flex;
+    position: relative;
+    float: start;
+}
+</style>
