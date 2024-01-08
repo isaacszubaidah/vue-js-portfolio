@@ -1,10 +1,9 @@
 {
-    "Home":[
-        {
-            "id":1,
-            "heading":"salaam",
-            "para":"none jinne",
-            "url":""
-        }
-    ]
+  "Home": [
+    {
+      "id": 1,
+      "heading": "Home Page",
+      "text": "This Better Work"
+    }
+  ]
 }
