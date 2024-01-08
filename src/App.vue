@@ -10,37 +10,34 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <nav class="navbar navbar-light bg-transparent">
-  <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img class="logo" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSFODz2vrInX_vrJIfzOfuNFbHD47ZCSF1BHiD4WMlVm6RQqHq7TrfyYOBm8vD6sHc76r_irUxp1c4589wkdPNnCl-rEQ=s2560" alt="">
+      <img class="logo" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTtXe4LvlEcbgX8yA8-Wsnv3R-PqrE_Y4NizziZBcH8-5qjUQTdvIoo2PuF3LM5IY9UeDcRIV6iEUonR0JBQF3qdHPkUA=s2560" alt="">
     </a>
-  </div>
-</nav>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
+          <router-link class="nav-link active" aria-current="page" to="/">Home  |</router-link> 
+        </li> 
+        <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/about">About  |</router-link> 
         </li>
         <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/about">About</router-link>
+              <router-link class="nav-link active" aria-current="page" to="/education">Education  |</router-link> 
         </li>
         <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/education">Education</router-link>
+              <router-link class="nav-link active" aria-current="page" to="/workexperience">Work Experience  |</router-link> 
         </li>
         <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/workexperience">Work Experience</router-link>
+              <router-link class="nav-link active" aria-current="page" to="/skills">Soft And Technical Skills  |
+              </router-link> 
         </li>
         <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/skills">Soft And Technical Skills</router-link>
+              <router-link class="nav-link active" aria-current="page" to="/projects">Projects  |</router-link> 
         </li>
         <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/projects">Projects</router-link>
+              <router-link class="nav-link active" aria-current="page" to="/resume">Resume  |</router-link> 
         </li>
         <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/resume">Resume</router-link>
-        </li>
-        <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/contact">Contact</router-link>
+              <router-link class="nav-link active" aria-current="page" to="/contact">Contact </router-link> 
         </li>
       </ul>
     </div>
@@ -64,11 +61,11 @@ nav a {
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
+/* nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 .logo{
-  width: 120px;
-  height:120px;
+  width: 90px;
+  height:70px;
 }
 </style>
