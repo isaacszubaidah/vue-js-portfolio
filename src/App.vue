@@ -4,16 +4,16 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/skills">Skills</router-link> |
   </nav> -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-light bg-transparent">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img class="logo" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRBRqyME_LggWDRyjUedrXxWsESs4t2CI_hcODY0tDjEg9SYrkMI74EJEy_AXxFmEFAD5QiOE-HTkpARzBKAHEIKC5CSQ=s2560" alt="">
+      <img class="logo" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSFODz2vrInX_vrJIfzOfuNFbHD47ZCSF1BHiD4WMlVm6RQqHq7TrfyYOBm8vD6sHc76r_irUxp1c4589wkdPNnCl-rEQ=s2560" alt="">
     </a>
   </div>
 </nav>
@@ -59,6 +59,7 @@
 }
 
 nav a {
+  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   color: #2c3e50;
 }
@@ -67,8 +68,7 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 .logo{
-  border-radius: 90px;
-  width: 100px;
-  height:90px;
+  width: 120px;
+  height:120px;
 }
 </style>
