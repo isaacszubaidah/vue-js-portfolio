@@ -19,10 +19,11 @@ export default {
 
 <style scoped>
 .HomePageImg{
-    width: 500px;
+    width: 400px;
     height: 450px;
     display: flex;
     position: relative;
+    padding: 20px;
     float: start;
 }
 </style>

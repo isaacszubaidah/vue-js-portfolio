@@ -10,7 +10,13 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Hidden brand</a>
+      <nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRBRqyME_LggWDRyjUedrXxWsESs4t2CI_hcODY0tDjEg9SYrkMI74EJEy_AXxFmEFAD5QiOE-HTkpARzBKAHEIKC5CSQ=s2560" alt="">
+    </a>
+  </div>
+</nav>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
@@ -19,7 +25,7 @@
               <router-link class="nav-link active" aria-current="page" to="/about">About</router-link>
         </li>
         <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/skills">Soft and Technical Skills</router-link>
+              <router-link class="nav-link active" aria-current="page" to="/education">Education</router-link>
         </li>
       </ul>
     </div>
@@ -37,10 +43,6 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
 nav a {
   font-weight: bold;
   color: #2c3e50;
@@ -48,5 +50,10 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+.logo{
+  border-radius: 90px;
+  width: 100px;
+  height:90px;
 }
 </style>
