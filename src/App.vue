@@ -27,6 +27,21 @@
         <li class="nav-item">
               <router-link class="nav-link active" aria-current="page" to="/education">Education</router-link>
         </li>
+        <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/workexperience">Work Experience</router-link>
+        </li>
+        <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/skills">Soft And Technical Skills</router-link>
+        </li>
+        <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/projects">Projects</router-link>
+        </li>
+        <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/resume">Resume</router-link>
+        </li>
+        <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/contact">Contact</router-link>
+        </li>
       </ul>
     </div>
   </div>
