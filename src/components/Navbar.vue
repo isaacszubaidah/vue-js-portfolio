@@ -29,6 +29,9 @@
               <router-link class="nav-link active" aria-current="page" to="/projects">Projects  |</router-link> 
         </li>
         <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/testimonials">Testimonials  |</router-link> 
+        </li>
+        <li class="nav-item">
               <router-link class="nav-link active" aria-current="page" to="/resume">Resume  |</router-link> 
         </li>
         <li class="nav-item">
