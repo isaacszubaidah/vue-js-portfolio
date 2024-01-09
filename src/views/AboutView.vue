@@ -11,7 +11,7 @@
       <div class="item-1">
         <img
           class="AboutPageImg"
-          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQUWZdfqDxl0q7ahpJNtPtfWnEzCoi3J-QtOZyO-Sj2BTzvnfLtqJl0evlUx_MTk3D7fJUQNohWh2uzyrc0k8OiGk_m=s1600"
+          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSFgLAgeZlJRQFQ9x7ozLLPGU6VnfHCTVm57W1MD0otcFXj6aevGdDKsR--UrqReG_FgsmrVbPHnTDS_DABbiUrk_Drmg=s1600"
           alt=""
         />
       </div>
@@ -38,8 +38,8 @@ export default {
   margin-top: 6%;
   border-radius: 60px;
   margin-right: 250px;
-  width: 320px;
-  height: 350px;
+  width: 380px;
+  height: 355px;
 }
 .item-2{
   font-family: 'Playfair Display', serif;

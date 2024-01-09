@@ -39,12 +39,12 @@ export default {
 .EducationPageImg {
   margin-top: 6%;
   margin-right: 250px;
-  width: 320px;
-  height: 350px;
+  width: 350px;
+  height: 380px;
 }
 .item-2{
   font-family: 'Playfair Display', serif;
-  margin-top:3%;
+  margin-top:2%;
   text-align: center;
   align-items: center;
   justify-content: center;
