@@ -30,9 +30,6 @@
               <router-link class="nav-link active" aria-current="page" to="/testimonials">Testimonials  |</router-link> 
         </li>
         <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/resume">Resume  |</router-link> 
-        </li>
-        <li class="nav-item">
               <router-link class="nav-link active" aria-current="page" to="/contact">Contact </router-link> 
         </li>
       </ul>
