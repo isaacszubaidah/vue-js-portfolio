@@ -1,4 +1,5 @@
 <template>
+  <navbar/>
   <div class="home vh-100">
   <h1>Still Loading</h1>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
@@ -7,13 +8,13 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import navbar from "../components/Navbar.vue"
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
+    name:"/",
+    components: {
+        navbar,
+    },
+
 }
 </script>
 
