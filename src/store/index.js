@@ -1,20 +1,28 @@
 import { createStore } from 'vuex'
-import axios from 'axios'
+const dataLink = "https://isaacszubaidah.github.io/Json-Data/"
 
 export default createStore({
-  state: {
+  state: { 
+    Projects: null,
+    Testimonials: null,
+    Resume: null,
+
   },
   getters: {
   },
   mutations: {
+      setProjects(state, Projects) {
+      state.Projects = Projects
+    },
+    setTestimonials(state, Testimonials) {
+      state.Testimonials = Testimonials
+    },
+    setResume(state, Resume) {
+      state.Resume = Resume
+    },
   },
   actions: {
-    // fetchData(
-      
-    //    axios.get("https://isaacszubaidah.github.io/vue-js-portfolio/").then(data => {console.log(data.Home[0])}) 
-      
-         
-    // ),
+
     
     
     
