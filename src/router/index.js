@@ -6,7 +6,6 @@ import WorkExperienceView from '../views/WorkExperienceView.vue'
 import SkillsView from '../views/SkillsView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
 import TestimonialsView from '../views/TestimonialsView.vue'
-import ResumeView from '../views/ResumeView.vue'
 import ContactView from '../views/ContactView.vue'
 
 const routes = [
@@ -44,11 +43,6 @@ const routes = [
     path: '/testimonials',
     name: 'testimonials',
     component: TestimonialsView
-  },
-  {
-    path: '/resume',
-    name: 'resume',
-    component: ResumeView
   },
   {
     path: '/contact',
