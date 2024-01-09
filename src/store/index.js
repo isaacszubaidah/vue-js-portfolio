@@ -1,6 +1,5 @@
 import { createStore } from 'vuex'
 const dataLink = "https://isaacszubaidah.github.io/Json-Data/"
-import { createStore } from 'vuex';
 
 export default createStore({
   state: { 
@@ -27,13 +26,9 @@ export default createStore({
   },
   actions: {
 
-    
-    
-    
-   
-
   },
   modules: {
+  },
   }
 });
 
