@@ -27,9 +27,6 @@ nav a {
   color: #2c3e50;
 }
 
- nav a.router-link-exact-active {
-  color: ;
-} 
 .logo{
   width: 90px;
   height:70px;
