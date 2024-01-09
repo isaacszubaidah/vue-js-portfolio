@@ -34,4 +34,10 @@ nav a {
   width: 90px;
   height:70px;
 }
+.center-nav{
+  margin-left: 90px;
+}
+#navbarTogglerDemo01{
+  margin-left: 40px;
+}
 </style>
