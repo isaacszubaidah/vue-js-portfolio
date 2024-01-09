@@ -34,7 +34,7 @@ export default {
 
 .HomePageImg{
     width: 350px;
-    height:390px;
+    height:420px;
 }
 
 .home {
@@ -62,7 +62,7 @@ grid: 700px / 1fr 1fr;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
+  margin-right: 15px;
   color: #5E5343;
 }
 .btn{
