@@ -57,7 +57,7 @@ export default createStore({
       dataProperty: "testimonials",
     }),
     getSkills: async (context) => context.dispatch('fetchData', {
-      url: datalink,
+      url: dataLink,
       mutation: "setSkills",
       dataProperty: "skills",
     }),
