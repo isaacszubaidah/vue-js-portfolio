@@ -114,7 +114,7 @@ p {
 .name{
     border: 0px solid black;
     border-bottom: 3px solid;
-    width: 150%;
+    width: 200%;
     color: #5e5343;
 }
 
@@ -122,7 +122,7 @@ p {
     border: 0px solid black;
     border-bottom: 3px solid;
     color: #5e5343;
-    width: 150%;
+    width: 200%;
     margin-top: 35%;
 }
 ::placeholder{
