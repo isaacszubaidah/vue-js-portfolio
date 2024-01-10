@@ -1,5 +1,4 @@
 <template>
-  <navbar />
   <div class="vh-100">
     <div class="about">
       <div class="item-2">
@@ -17,18 +16,11 @@
       </div>
     </div>
   </div>
-  <Footer/>
 </template>
 
 <script>
-import navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue"
 export default {
-  name: "about",
-  components: {
-    navbar,
-    Footer,
-  },
+
 };
 </script>
 <style scoped>

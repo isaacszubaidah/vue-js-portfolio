@@ -1,5 +1,4 @@
 <template>
-  <navbar />
   <div>
     <div class="workexperience">
       <div class="card">2022</div>
@@ -8,18 +7,11 @@
       <div class="card">Resume</div>
     </div>
   </div>
-  <Footer/>
 </template>
 
 <script>
-import navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue"
 export default {
-  name: "workexperience",
-  components: {
-    navbar,
-    Footer,
-  },
+
 };
 </script>
 

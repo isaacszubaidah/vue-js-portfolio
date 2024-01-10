@@ -1,6 +1,5 @@
 <template>
   <div>
-    <navbar/>
     <div class="home">
       <div class="item-1">
       <img class="HomePageImg" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTIqMZ_6HYmreaUb7IjF02dbzkvD7Zx52hj6wd1rD4NiYylCbcjcLrxkV_9NfyY49mzkpeBPNcKH_WGze-_x75__iF8=s1600" alt="">
@@ -15,20 +14,14 @@
       </div>
       
   </div>
-  <Footer />
 </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import navbar from "../components/Navbar.vue"
-import Footer from "../components/Footer.vue"
+
 export default {
-    name:"/",
-    components: {
-      navbar,
-      Footer,
-    },
+
 
 };
 </script>
