@@ -1,7 +1,11 @@
 <template>
     <navbar/>
- <div class="contact">
-<p>contact page</p>
+ <div class="contact vh-100">
+<div>
+    <h1 class="header">Work With Me</h1>
+    <p class="sub">Got a question or proposal, or just want
+        to say hello?</p>
+</div>
  </div>
  <Footer/>
 </template>
@@ -19,6 +23,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.header{
+    font-size:40px;
+    font-family:'Playfair Display', serif;
+    color: #5E5343;
+}
+.sub{
+    font-size:18px;
+    font-family:'Playfair Display', serif;
+    color: #5E5343;
+}
 
 </style>
