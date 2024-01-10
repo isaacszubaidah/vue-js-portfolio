@@ -13,7 +13,7 @@
 
   <!-- Naeema's attempt starts here -->
   <div class="bigger mt-5 row">
-    <div class="col-6 columnA">
+    <div class="col-6 columnA ">
       <div>
         <form action="https://formspree.io/f/mayrnyoz" method="POST">
           <label>
@@ -35,19 +35,19 @@
     <div class="col-6 columnA">
       <div class="row iconRow">
         <div class="col-3">
-          <p><i class="fa-solid fa-location-dot"></i></p>
+          <p><i class="fa-solid fa-location-dot fa-2x"></i></p>
         </div>
         <div class="col-9"><p>Manenberg,7764,Cape Town</p></div>
       </div>
       <div class="row iconRow">
-        <div class="col-3">
-          <p><i class="fa-solid fa-envelope"></i></p>
+        <div class="col-3 ">
+          <p><i class="fa-solid fa-envelope fa-2x"></i></p>
         </div>
         <div class="col-9"><p>isaacszubaidah17@gmail.com</p></div>
       </div>
       <div class="row iconRow">
         <div class="col-3">
-          <p><i class="fa-solid fa-mobile"></i></p>
+          <p><i class="fa-solid fa-mobile fa-2x"></i></p>
         </div>
         <div class="col-9"><p class="num">067 978 2069</p></div>
       </div>
@@ -97,7 +97,7 @@ p {
 
 .columnA {
   height: 300px;
-  width: 350px;
+  width: 400px;
 }
 
 .iconRow {
@@ -114,6 +114,7 @@ p {
 .name{
     border: 0px solid black;
     border-bottom: 3px solid;
+    width: 150%;
     color: #5e5343;
 }
 
@@ -121,16 +122,22 @@ p {
     border: 0px solid black;
     border-bottom: 3px solid;
     color: #5e5343;
+    width: 150%;
     margin-top: 35%;
 }
 ::placeholder{
     font-weight: bold;
+    font-size: 14px;
+    display: flex;
+   text-align:center;
+    justify-content: center;
     font-family: "Quicksand", sans-serif;
     color: #5e5343;
 
 }
 .btn{
     margin-top: 3%;
+    margin-left: 100px;
     background-color: #5e5343;
     color: white;
 }
