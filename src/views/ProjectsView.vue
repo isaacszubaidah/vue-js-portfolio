@@ -1,19 +1,24 @@
 <template>
-   <navbar/>
-   <div class="projects">
-<p>Project page</p>
- </div>
+<div v-for="project of projects" :key="project.id">
+{{ project.id }}
+</div>
 </template>
 
 <script>
-import navbar from "@/components/Navbar.vue"
-export default {
-    name:"projects",
-    components: {
-        navbar,
-    },
 
-}
+export default {
+    computed:{
+      projects(){
+         console.log(this.$store.state.projects,"this.$store.state.projects")
+         return this.$store.state.projects
+      }
+   },
+   mounted(){
+      this.$store.dispatch("getProjects")
+   },
+   // components: {CardComp}
+   
+  }
 </script>
 
 <style>

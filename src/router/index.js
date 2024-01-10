@@ -5,7 +5,7 @@ import EducationView from '../views/EducationView.vue'
 import WorkExperienceView from '../views/WorkExperienceView.vue'
 import SkillsView from '../views/SkillsView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
-import ResumeView from '../views/ResumeView.vue'
+import TestimonialsView from '../views/TestimonialsView.vue'
 import ContactView from '../views/ContactView.vue'
 
 const routes = [
@@ -40,9 +40,9 @@ const routes = [
     component: ProjectsView
   },
   {
-    path: '/resume',
-    name: 'resume',
-    component: ResumeView
+    path: '/testimonials',
+    name: 'testimonials',
+    component: TestimonialsView
   },
   {
     path: '/contact',

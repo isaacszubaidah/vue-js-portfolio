@@ -1,13 +1,12 @@
 <template>
- <div class="skills">
-<p>skills page</p>
- </div>
+  <div class="testimonials">
+<h1>Testimonials</h1> 
+  </div>
 </template>
 
 <script>
-
 export default {
-
+ 
 
 }
 </script>
