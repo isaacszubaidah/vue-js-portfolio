@@ -7,7 +7,6 @@
       <div class="card">2023-2024</div>
       <div class="card">Resume</div>
     </div>
-    <p>workexperience page and add your resume here</p>
   </div>
 </template>
 
@@ -23,18 +22,30 @@ export default {
 
 <style scoped>
 .workexperience {
+  font-size: 20px;
+ font-weight: bold;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  margin: 0 auto;
+  margin-top: 3%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: stretch;
   overflow-x: auto;
+  width:90%;
   gap: 30px;
 }
 .card {
-  width: 400px;
+  width: 370px;
   height: 500px;
   border-radius: 20px;
   background: #D1C2BB;
   min-width: 400px;
 }
+
+.workexperience {
+ -ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
+}
+
 
 </style>

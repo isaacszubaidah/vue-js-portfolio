@@ -36,9 +36,10 @@ export default {
 }
 .AboutPageImg {
   margin-top: 6%;
+  border: 3px solid;
   border-radius: 60px;
   margin-right: 250px;
-  width: 380px;
+  width: 400px;
   height: 355px;
 }
 .item-2{

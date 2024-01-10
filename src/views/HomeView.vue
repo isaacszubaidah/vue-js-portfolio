@@ -33,7 +33,8 @@ export default {
 <style scoped>
 
 .HomePageImg{
-  border-radius: 30px;
+    border: 2px solid;
+    border-radius: 30px;
     width: 300px;
     height:470px;
 }
@@ -44,6 +45,7 @@ grid: 700px / 1fr 1fr;
 }
 
 .item-1 img{
+  margin-left: 200px;
   margin-top: 4%;
   align-self: center;
 }
