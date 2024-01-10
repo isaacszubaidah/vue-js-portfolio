@@ -17,14 +17,17 @@
       </div>
     </div>
   </div>
+  <Footer/>
 </template>
 
 <script>
 import navbar from "@/components/Navbar.vue"
+import Footer from "@/components/Footer.vue"
 export default {
     name:"education",
     components: {
         navbar,
+        Footer,
     },
 
 }
@@ -32,7 +35,7 @@ export default {
 
 <style scoped>
 .education {
-  margin-top: 5%;
+  margin-top: 3%;
   display: grid;
   grid: 700px / 1fr 1fr;
 }

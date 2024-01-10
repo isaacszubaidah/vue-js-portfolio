@@ -17,14 +17,17 @@
       </div>
     </div>
   </div>
+  <Footer/>
 </template>
 
 <script>
 import navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue"
 export default {
   name: "about",
   components: {
     navbar,
+    Footer,
   },
 };
 </script>

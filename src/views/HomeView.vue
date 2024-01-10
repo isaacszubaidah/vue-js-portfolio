@@ -1,33 +1,36 @@
 <template>
-<div class="vh-100">
-  <navbar/>
-  <div class="home">
-    <div class="item-1">
+  <div>
+    <navbar/>
+    <div class="home">
+      <div class="item-1">
       <img class="HomePageImg" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTIqMZ_6HYmreaUb7IjF02dbzkvD7Zx52hj6wd1rD4NiYylCbcjcLrxkV_9NfyY49mzkpeBPNcKH_WGze-_x75__iF8=s1600" alt="">
     </div>
     <div class="item-2">
       <p>Zubaidah</p>
       <p>Isaacs</p>
       <div class="item-3">
-         <p>Aspiring Developer</p>
-        </div>
+        <p>Aspiring Developer</p>
+      </div>
         <router-link class="nav-link active" aria-current="page" to="/contact"><button class="btn">Find Me</button></router-link>
-    </div>
-   
+      </div>
+      
   </div>
+  <Footer />
 </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import navbar from "../components/Navbar.vue"
+import Footer from "../components/Footer.vue"
 export default {
     name:"/",
     components: {
-        navbar,
+      navbar,
+      Footer,
     },
 
-}
+};
 </script>
 
 <style scoped>
