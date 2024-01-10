@@ -1,22 +1,20 @@
 <template>
-<div v-for="project of projects" :key="project.id">
-{{ project.id }}
-</div>
+<ProjectsCard v-for="project of projects" :key="project.id" :project="project" />
 </template>
 
 <script>
+import ProjectsCard from "@/components/ProjectsCard.vue"
 
 export default {
     computed:{
       projects(){
-         console.log(this.$store.state.projects,"this.$store.state.projects")
          return this.$store.state.projects
       }
    },
    mounted(){
       this.$store.dispatch("getProjects")
    },
-   // components: {CardComp}
+   components: {ProjectsCard}
    
   }
 </script>
