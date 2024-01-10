@@ -3,7 +3,7 @@
   <navbar/>
   <div class="home">
     <div class="item-1">
-      <img class="HomePageImg" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQu91Pe_Nk3zKOTNzsPU-dVGMN_7hj9VlMNc1E1Is78fcXSJxOYlVixHqK0wL6FXYZHNiWCTKNUSDcoTOmdd8B7x0nppA=s2560" alt="">
+      <img class="HomePageImg" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTIqMZ_6HYmreaUb7IjF02dbzkvD7Zx52hj6wd1rD4NiYylCbcjcLrxkV_9NfyY49mzkpeBPNcKH_WGze-_x75__iF8=s1600" alt="">
     </div>
     <div class="item-2">
       <p>Zubaidah</p>
@@ -33,8 +33,9 @@ export default {
 <style scoped>
 
 .HomePageImg{
-    width: 350px;
-    height:420px;
+  border-radius: 30px;
+    width: 300px;
+    height:470px;
 }
 
 .home {
