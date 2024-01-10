@@ -1,6 +1,6 @@
   <template>
-    <div class="vh-100">
-    <div class="education">
+    <div class=" vh-100  ">
+    <div class="education ">
       <div class="item-2">
         <h1>Education</h1>
         <div class="item-3">
