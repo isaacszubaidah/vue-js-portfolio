@@ -1,12 +1,10 @@
 <template>
   <footer>
-    <div>
+    <div class="footer">
       <p class="para">Zubaidah Isaacs</p>
-    </div>
-    <div>
+
       <p class="para">CopyRights Reserved</p>
-    </div>
-    <div>
+
       <p class="para2">{{ getCurrentYear() }}</p>
     </div>
   </footer>
@@ -29,4 +27,19 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1220px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+</style>
