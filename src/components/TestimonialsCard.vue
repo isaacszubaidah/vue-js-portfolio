@@ -52,5 +52,6 @@ export default {
   width: 150px;
   height: 150px;
   border-radius: 100%;
+  border: 1px solid black;
 }
 </style>

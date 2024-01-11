@@ -68,9 +68,21 @@ export default {
 
 @media screen and (max-width: 480px) {
   .testimonialContainer {
+    margin-top: 40%;
+  }
+
+  .testimonials {
+    padding-top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 1200px;
+    overflow: auto;
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 20px;
+    padding-bottom: 0;
   }
 }
 
