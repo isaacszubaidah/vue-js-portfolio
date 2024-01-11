@@ -12,7 +12,7 @@
           </p>
         </div>
       </div>
-      <div class="item-1 animate-right ">
+      <div class="item-1 animate-right">
         <img
           class="AboutPageImg"
           src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSFgLAgeZlJRQFQ9x7ozLLPGU6VnfHCTVm57W1MD0otcFXj6aevGdDKsR--UrqReG_FgsmrVbPHnTDS_DABbiUrk_Drmg=s1600"
@@ -27,7 +27,6 @@
 export default {};
 </script>
 <style scoped>
-
 .animate-right {
   animation: slideInRight 1s ease-in-out;
 }
@@ -64,7 +63,9 @@ export default {};
 }
 
 .paragraphAbout {
-  max-width: 700px;
+  max-width: 600px;
+  padding-top: 20px;
+  margin: auto;
 }
 
 @media screen and (max-width: 480px) {

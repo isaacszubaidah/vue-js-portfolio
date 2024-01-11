@@ -66,7 +66,8 @@ export default {};
 }
 
 .paragraphEdu {
-  max-width: 700px;
+  padding-top: 20px;
+  max-width: 600px;
 }
 
 @media screen and (max-width: 480px) {
