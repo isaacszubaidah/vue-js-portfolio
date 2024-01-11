@@ -1,117 +1,59 @@
 <template>
-  <div class="projects mt-5">
+  <div class="">
     <div class="row">
-      <!-- Card 1 -->
-      <div class="col-4">
-        <div class="card shadow-lg p-3">
-          <img src="" class="card-img-top" alt="..." />
+      <div class="col-4 card-container">
+        <div class="card">
+          <img :src="project.url" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">{{ project.heading }}</h5>
             <p class="card-text">{{ project.text }}</p>
           </div>
           <div class="card-body">
-            <a href="" class="card-link">Github link</a>
-            <a href="" class="card-link">Netlify link</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-4">
-        <div class="card shadow-lg p-3">
-          <img src="" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">{{ project.heading }}</h5>
-            <p class="card-text">{{ project.text }}</p>
-          </div>
-          <div class="card-body">
-            <a href="" class="card-link">Github link</a>
-            <a href="" class="card-link">Netlify link</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-4">
-        <div class="card shadow-lg p-3">
-          <img src="" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">{{ project.heading }}</h5>
-            <p class="card-text">{{ project.text }}</p>
-          </div>
-          <div class="card-body">
-            <a href="" class="card-link">Github link</a>
-            <a href="" class="card-link">Netlify link</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row" style="margin-top: 3%;">
-      <!-- Card 1 -->
-      <div class="col-4">
-        <div class="card shadow-lg p-3">
-          <img src="" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">{{ project.heading }}</h5>
-            <p class="card-text">{{ project.text }}</p>
-          </div>
-          <div class="card-body">
-            <a href="" class="card-link">Github link</a>
-            <a href="" class="card-link">Netlify link</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-4">
-        <div class="card shadow-lg p-3">
-          <img src="" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">{{ project.heading }}</h5>
-            <p class="card-text">{{ project.text }}</p>
-          </div>
-          <div class="card-body">
-            <a href="" class="card-link">Github link</a>
-            <a href="" class="card-link">Netlify link</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-4">
-        <div class="card shadow-lg p-3">
-          <img src="" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">{{ project.heading }}</h5>
-            <p class="card-text">{{ project.text }}</p>
-          </div>
-          <div class="card-body">
-            <a href="" class="card-link">Github link</a>
-            <a href="" class="card-link">Netlify link</a>
+            <a :href="project.githubLink" class="card-link">Github</a>
+            <a :href="project.siteLink" class="card-link">Netlify</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </template>
-  
-  <script>
-  export default {
-    props: ["project"],
-  };
-  </script>
-  
-  <style scoped>
-  .projects{
-    overflow-x: hidden;
-  }
-  
-  .row {
-    margin: 0 auto;
-  }
-  .card{
-    width: 18rem;
-    height: 25rem;
-    border-radius:30px ;
-    margin: 0 auto;
-  }
-  img{
-    margin-left:50% ;
-  }
-  </style>
+</template>
+
+<script>
+export default {
+  props: ["project"],
+};
+</script>
+
+<style scoped>
+.projects {
+  overflow-x: hidden;
+}
+.card-text {
+  font-size: 14px;
+}
+
+.row {
+  margin: 0 auto;
+}
+.card {
+  width: 18rem;
+  height: 25rem;
+  border-radius: 10px;
+  padding: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover .card {
+  transform: translateY(-10px);
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+  color: #5e5343;
+}
+</style>

@@ -1,8 +1,7 @@
 <template>
-  <div class="work-card">
+  <div class="soft-card">
     <div class="header">
       <p class="heading-text">{{ resume.heading }}</p>
-      <p>{{ resume.year }}</p>
     </div>
     <div>
       <p>{{ resume.text }}</p>
@@ -17,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-.header {
+.header h2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +27,8 @@ export default {
   color: #5e5343;
   font-size: 20px;
 }
-.work-card{
+
+.soft-card {
   padding-top: 10px;
 }
 </style>
