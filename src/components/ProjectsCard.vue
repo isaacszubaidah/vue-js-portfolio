@@ -40,10 +40,20 @@ export default {
   height: 25rem;
   border-radius: 10px;
   padding: 16px;
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card-container:hover .card {
   transform: translateY(-10px);
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+  color: #5e5343;
 }
 </style>
