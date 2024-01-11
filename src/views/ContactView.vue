@@ -11,42 +11,6 @@
 
     <div class="bigger mt-5">
       <div class="col-6 columnA">
-        <!-- <form
-          action="https://formspree.io/f/mayrnyoz"
-          method="POST"
-          class="formDiv"
-        >
-          <label>
-            <input
-              class="name"
-              type="name"
-              name="name"
-              placeholder="Enter Your Name"
-              required
-            />
-          </label>
-          <label>
-            <input
-              class="input"
-              type="email"
-              name="email"
-              placeholder="Enter Your Email"
-              required
-            />
-          </label>
-          <label>
-            <textarea
-              class="input"
-              name="message"
-              placeholder="Enter Message"
-              required
-            ></textarea>
-          </label>
-          <div>
-            <button class="btn" type="submit">Send</button>
-          </div>
-        </form> -->
-
         <form @submit.prevent="submitForm" class="formDiv">
           <label>
             <input
@@ -157,6 +121,9 @@ export default {
         .then((response) => {
           if (!response.ok) {
             alert("Something went wrong , please try again");
+          }
+          if (response.ok) {
+            alert("Your information was submitted successfullly! Thanks! ");
           }
           return response.json();
         })
