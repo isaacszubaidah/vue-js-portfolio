@@ -191,6 +191,7 @@ export default {
 
 .error {
   color: red;
+  font-size: 14px;
 }
 
 .header {
