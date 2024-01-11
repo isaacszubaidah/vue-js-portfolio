@@ -1,5 +1,7 @@
 <template>
-  {{ project.id }} 2
+  {{ project.id}} 
+  {{ project.heading}} 
+  {{ project.text}}
 </template>
 
 <script>
