@@ -1,5 +1,8 @@
 <template>
+<div class="projects mt-5 vh-100">
+
 <ProjectsCard v-for="project of projects" :key="project.id" :project="project" />
+</div>
 </template>
 
 <script>

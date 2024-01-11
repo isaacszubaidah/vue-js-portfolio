@@ -8,7 +8,7 @@
           alt=""
         />
       </div>
-      <div class="item-2">
+      <div class="item-2 animate-right">
         <p>Zubaidah</p>
         <p>Isaacs</p>
         <div class="item-3">
@@ -27,6 +27,19 @@ export default {};
 </script>
 
 <style scoped>
+.animate-right {
+  animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .HomePageImg {
   border: 2px solid;
   border-radius: 30px;
