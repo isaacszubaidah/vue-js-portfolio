@@ -1,10 +1,17 @@
-  <template>
-    <div class=" vh-100  ">
-    <div class="education ">
+<template>
+  <div class="vh-100">
+    <div class="education">
       <div class="item-2">
-        <h1>Education</h1>
         <div class="item-3">
-          <p>I matriculated in the year 2020.I was the valedictorian of my class that year.It was tough because of Covid and that is where I learnt that nothing can stop you, once you are committed and persevere.I won’t forget this quote from Hamlet , “To be or not to be” in the sense of is it nobler to drown in the sea of troubles or will you take arms and defeat it.</p>
+          <h1>Education</h1>
+          <p class="paragraphEdu">
+            I matriculated in the year 2020.I was the valedictorian of my class
+            that year.It was tough because of Covid and that is where I learnt
+            that nothing can stop you, once you are committed and persevere.I
+            won’t forget this quote from Hamlet , “To be or not to be” in the
+            sense of is it nobler to drown in the sea of troubles or will you
+            take arms and defeat it.
+          </p>
         </div>
       </div>
       <div class="item-1">
@@ -19,42 +26,69 @@
 </template>
 
 <script>
-
-export default {
-
-
-}
+export default {};
 </script>
 
 <style scoped>
 .education {
-  margin-top: 3%;
   display: grid;
   grid: 700px / 1fr 1fr;
+  align-items: center;
 }
 .EducationPageImg {
-  margin-top: 6%;
+
+  border-radius: 60px;
   margin-right: 250px;
-  width: 350px;
-  height: 380px;
+  width: 400px;
+  height: 355px;
 }
-.item-2{
-  font-family: 'Playfair Display', serif;
-  margin-top:2%;
+.item-2 {
+  font-family: "Playfair Display", serif;
   text-align: center;
   align-items: center;
-  justify-content: center;
-  color: #5E5343;
-}
-.item-3{
-  font-size:27px;
-  font-family: 'Playfair Display', serif;
-  margin-top: 8%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-left: 170px;
-  color: #5E5343;
+  color: #5e5343;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
 }
 
+
+.paragraphEdu {
+  max-width: 700px;
+}
+
+@media screen and (max-width: 480px) {
+  .education {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 50px;
+  }
+
+  .EducationPageImg {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .item-2 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    align-items: center;
+    color: #5e5343;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
 </style>

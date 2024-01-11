@@ -4,7 +4,7 @@
       <div class="item-2">
         <div class="item-3">
           <h1>Who Am I ?</h1>
-          <p>
+          <p class="paragraphAbout">
             I am the girl who likes to laugh and to make those around me smile.
             I am hardworking and competetive in the sense of I am always willing
             to accept a challenge. I enjoy baking and coding in my free time
@@ -47,7 +47,11 @@ export default {};
   gap: 30px;
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+.paragraphAbout {
+  max-width: 700px;
 }
 
 @media screen and (max-width: 480px) {
@@ -70,6 +74,17 @@ export default {};
     border-radius: 30px;
     width: 300px;
     height: 300px;
+  }
+
+  .item-2 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    align-items: center;
+    color: #5e5343;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
   }
 }
 </style>
