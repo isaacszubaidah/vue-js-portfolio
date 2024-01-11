@@ -1,11 +1,14 @@
 <template>
-  <div>
-    <div v-if="isLoading" class="loader"></div>
-    <TestimonialsCard
-      v-for="testimonials of testimonials"
-      :key="testimonials.id"
-      :testimonials="testimonials"
-    />
+  <div v-if="isLoading" class="loader"></div>
+  <h1>Testimonials</h1>
+  <div class="vh-100 testimonialContainer">
+    <div class="testimonials">
+      <TestimonialsCard
+        v-for="testimonials of testimonials"
+        :key="testimonials.id"
+        :testimonials="testimonials"
+      />
+    </div>
   </div>
 </template>
 
@@ -47,5 +50,31 @@ export default {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.testimonials {
+  padding-top: 60px;
+  display: flex;
+  max-width: 1200px;
+  overflow: auto;
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .testimonialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h1 {
+  color: #5e5343;
 }
 </style>

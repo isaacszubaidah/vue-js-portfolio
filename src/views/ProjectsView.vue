@@ -1,5 +1,6 @@
 <template>
   <div v-if="isLoading" class="loader"></div>
+  <h1>Projects</h1>
   <div class="projects">
     <ProjectsCard
       v-for="project of projects"
@@ -59,5 +60,9 @@ export default {
   100% {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  color: #5e5343;
 }
 </style>

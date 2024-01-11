@@ -2,7 +2,7 @@
   <div class="">
     <div class="row">
       <div class="col-4 card-container">
-        <div class="card shadow-lg">
+        <div class="card">
           <img :src="project.url" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">{{ project.heading }}</h5>
