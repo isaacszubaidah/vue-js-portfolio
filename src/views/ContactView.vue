@@ -11,7 +11,7 @@
     </div>
   </div>
 
-  <!-- Naeema's attempt starts here -->
+  <!-- Contact Form -->
   <div class="bigger mt-5 row">
     <div class="col-6 columnA ">
       <div>

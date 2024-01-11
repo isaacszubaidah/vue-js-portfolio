@@ -1,14 +1,22 @@
 <template>
-  <div class="testimonials">
-<h1>Testimonials</h1> 
-  </div>
+<TestimonialsCard v-for="testimonials of testimonials" :key="testimonials.id" :testimonials="testimonials" />
 </template>
 
 <script>
-export default {
- 
+import TestimonialsCard from "@/components/TestimonialsCard.vue"
 
-}
+export default {
+    computed:{
+      testimonials(){
+         return this.$store.state.testimonials
+      }
+   },
+   mounted(){
+      this.$store.dispatch("getTestimonials")
+   },
+   components: {TestimonialsCard}
+   
+  }
 </script>
 
 <style>

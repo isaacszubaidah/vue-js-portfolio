@@ -56,10 +56,10 @@ export default createStore({
       mutation: "setTestimonials",
       dataProperty: "testimonials",
     }),
-    getSkills: async (context) => context.dispatch('fetchData', {
+    getResume: async (context) => context.dispatch('fetchData', {
       url: dataLink,
-      mutation: "setSkills",
-      dataProperty: "skills",
+      mutation: "setResume",
+      dataProperty: "resume",
     }),
   },
 });
