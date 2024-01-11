@@ -14,7 +14,7 @@
           </p>
         </div>
       </div>
-      <div class="item-1">
+      <div class="item-1 animate-right">
         <img
           class="EducationPageImg"
           src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRmDEMj0-EdPhY6KA1atbD6nMcGODEzVF_NZCHOWZxIprioWPRnVRz15ViT7Gyk356l_nrv8cOyZH4HABLvUXE5Qx_2=s2560"
@@ -30,15 +30,27 @@ export default {};
 </script>
 
 <style scoped>
+.animate-right {
+  animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .education {
   display: grid;
   grid: 700px / 1fr 1fr;
   align-items: center;
 }
 .EducationPageImg {
-
   border-radius: 60px;
-  margin-right: 250px;
+  /* margin-right: 250px; */
   width: 400px;
   height: 355px;
 }
@@ -52,7 +64,6 @@ export default {};
   flex-direction: column;
   font-size: 20px;
 }
-
 
 .paragraphEdu {
   max-width: 700px;

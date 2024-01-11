@@ -12,7 +12,7 @@
           </p>
         </div>
       </div>
-      <div class="item-1">
+      <div class="item-1 animate-right ">
         <img
           class="AboutPageImg"
           src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSFgLAgeZlJRQFQ9x7ozLLPGU6VnfHCTVm57W1MD0otcFXj6aevGdDKsR--UrqReG_FgsmrVbPHnTDS_DABbiUrk_Drmg=s1600"
@@ -27,6 +27,19 @@
 export default {};
 </script>
 <style scoped>
+
+.animate-right {
+  animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .about {
   display: grid;
   grid: 700px / 1fr 1fr;
@@ -35,7 +48,7 @@ export default {};
 .AboutPageImg {
   border: 3px solid;
   border-radius: 60px;
-  margin-right: 250px;
+  /* margin-right: 250px; */
   width: 400px;
   height: 355px;
 }
