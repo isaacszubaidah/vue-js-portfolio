@@ -39,7 +39,7 @@ nav a {
   height:70px;
 }
 .center-nav{
-  margin-left: 90px;
+  margin-left: 295px;
 }
 #navbarTogglerDemo01{
   margin-left: 40px;

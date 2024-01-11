@@ -1,6 +1,6 @@
 <template>
- <div class="skills">
-<p>skills page</p>
+ <div class="resume">
+<p>resume page</p>
  </div>
 </template>
 
