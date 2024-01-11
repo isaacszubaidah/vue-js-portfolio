@@ -1,6 +1,6 @@
 <template>
-  <div class="projects mt-5 vh-100">
-    <div v-if="isLoading" class="loader"></div>
+  <div v-if="isLoading" class="loader"></div>
+  <div class="projects">
     <ProjectsCard
       v-for="project of projects"
       :key="project.id"
@@ -29,6 +29,18 @@ export default {
 </script>
 
 <style scoped>
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1220px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 60px;
+}
 .loader {
   width: 40px;
   height: 40px;
