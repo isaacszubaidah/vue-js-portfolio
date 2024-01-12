@@ -29,6 +29,13 @@ export default {
   font-size: 20px;
 }
 .work-card{
-  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1220px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
 </style>

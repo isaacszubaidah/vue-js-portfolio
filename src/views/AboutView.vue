@@ -15,7 +15,7 @@
       <div class="item-1 animate-right">
         <img
           class="AboutPageImg"
-          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSFgLAgeZlJRQFQ9x7ozLLPGU6VnfHCTVm57W1MD0otcFXj6aevGdDKsR--UrqReG_FgsmrVbPHnTDS_DABbiUrk_Drmg=s1600"
+          src="https://i.imgur.com/LyNUFPt.jpg"
           alt=""
         />
       </div>
@@ -48,8 +48,8 @@ export default {};
   border: 3px solid;
   border-radius: 60px;
   /* margin-right: 250px; */
-  width: 400px;
-  height: 355px;
+  width: 300px;
+  height: 400px;
 }
 .item-2 {
   font-family: "Playfair Display", serif;
