@@ -4,7 +4,7 @@
       <div class="item-1">
         <img
           class="HomePageImg"
-          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTIqMZ_6HYmreaUb7IjF02dbzkvD7Zx52hj6wd1rD4NiYylCbcjcLrxkV_9NfyY49mzkpeBPNcKH_WGze-_x75__iF8=s1600"
+          src="https://i.imgur.com/ObkxD6o.jpg"
           alt=""
         />
       </div>
@@ -43,7 +43,7 @@ export default {};
 .HomePageImg {
   border: 2px solid;
   border-radius: 30px;
-  width: 300px;
+  width: 350px;
   height: 470px;
 }
 
