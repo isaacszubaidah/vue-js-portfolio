@@ -52,6 +52,9 @@ export default {
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
+h1{
+  font-family: "Playfair Display", serif;
+}
 
 @keyframes rotation {
   0% {

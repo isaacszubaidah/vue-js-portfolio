@@ -1,6 +1,7 @@
 <template>
   <div v-if="isLoading" class="loader"></div>
   <h1>Testimonials</h1>
+  <p>Scroll sideways to view more</p>
   <div class="vh-100 testimonialContainer">
     <div class="testimonials">
       <TestimonialsCard
@@ -41,6 +42,14 @@ export default {
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
+}
+h1{
+  font-family: "Playfair Display", serif;
+}
+p{
+  font-family:"Playfair Display", serif; ;
+  font-size: 18px;
+  color: #5e5343;
 }
 
 @keyframes rotation {

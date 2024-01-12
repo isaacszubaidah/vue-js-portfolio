@@ -28,8 +28,15 @@ export default {
 .projects {
   overflow-x: hidden;
 }
+.card-title {
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  color: #5e5343;
+}
 .card-text {
   font-size: 14px;
+  padding-top: 5px;
+  height: 100px;
 }
 
 .row {
@@ -38,6 +45,7 @@ export default {
 .card {
   width: 18rem;
   height: 25rem;
+  box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
   padding: 16px;
   transition: transform 0.3s ease-in-out;
