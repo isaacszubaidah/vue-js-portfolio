@@ -70,7 +70,14 @@ export default {
   color: white;
 }
 h5{
+  font-family:"Playfair Display", serif;
+  font-weight: bold;
+  font-size: 20px;
   color: #5e5343;
+}
+h2{
+  font-family:"Playfair Display", serif;
+  color: #5e5343
 }
 
 @keyframes rotation {
