@@ -24,6 +24,8 @@ export default {
 }
 
 .heading-text {
+  font-family:"Playfair Display", serif;
+  font-weight: bold;
   color: #5e5343;
   font-size: 20px;
 }

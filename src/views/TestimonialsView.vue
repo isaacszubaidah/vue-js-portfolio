@@ -47,7 +47,7 @@ h1{
   font-family: "Playfair Display", serif;
 }
 p{
-  font-family:"Playfair Display", serif; ;
+  font-family:"Playfair Display", serif;
   font-size: 18px;
   color: #5e5343;
 }
