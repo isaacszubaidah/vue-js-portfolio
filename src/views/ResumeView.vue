@@ -19,6 +19,11 @@
         :resume="sofTechResume"
       />
     </div>
+    <div>
+      <h5>Resume Document</h5>
+      <p>Feel Free to Explore</p>
+      <a href="https://docs.google.com/document/d/1UhD23rohZnc0Chtf6SPqZtM_2dVW5PRh/edit?usp=sharing&ouid=116533081415464734347&rtpof=true&sd=true"><button class="btn">Read Me</button></a>
+    </div>
   </div>
 </template>
 
@@ -59,6 +64,13 @@ export default {
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
+}
+.btn{
+  background-color:#5e5343 ;
+  color: white;
+}
+h5{
+  color: #5e5343;
 }
 
 @keyframes rotation {
