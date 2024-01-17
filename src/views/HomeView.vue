@@ -1,5 +1,5 @@
 <template>
-  <div class="vh-100">
+  <div>
     <div class="home">
       <div class="item-1">
         <img
