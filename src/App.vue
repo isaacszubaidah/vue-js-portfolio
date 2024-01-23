@@ -51,6 +51,7 @@ footer{
     justify-content: space-between;
     align-content: center;
     position: sticky;
+    margin-top: 10px;
     bottom: 0;
     background-color: #DEB887;
 }

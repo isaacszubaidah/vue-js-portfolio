@@ -1,5 +1,5 @@
 <template>
-  <div class="vh-100">
+  <div>
     <div class="education">
       <div class="item-2">
         <div class="item-3">
