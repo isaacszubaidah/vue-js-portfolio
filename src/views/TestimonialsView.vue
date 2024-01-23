@@ -2,7 +2,7 @@
   <div v-if="isLoading" class="loader"></div>
   <h1>Testimonials</h1>
   <p>Scroll sideways to view more</p>
-  <div class="vh-100 testimonialContainer">
+  <div class="testimonialContainer">
     <div class="testimonials">
       <TestimonialsCard
         v-for="testimonials of testimonials"
@@ -43,11 +43,11 @@ export default {
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
-h1{
+h1 {
   font-family: "Playfair Display", serif;
 }
-p{
-  font-family:"Playfair Display", serif;
+p {
+  font-family: "Playfair Display", serif;
   font-size: 18px;
   color: #5e5343;
 }
@@ -83,8 +83,11 @@ p{
   .testimonials {
     padding-top: 0;
     display: flex;
+    flex-direction: column;
     max-width: 1200px;
-    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: none;
     width: 100%;
     padding-right: 16px;
     padding-left: 16px;
