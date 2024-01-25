@@ -77,6 +77,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .testimonialContainer {
+    margin-bottom: 80px;
     margin-top: 40%;
   }
 
