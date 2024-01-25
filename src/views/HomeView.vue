@@ -91,6 +91,7 @@ export default {};
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 150px;
     padding-left: 16px;
     padding-right: 16px;
   }

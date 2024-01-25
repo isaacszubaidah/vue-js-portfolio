@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div class="bigger mt-5">
+    <div class="bigger mt-3">
       <div class="col-6 columnA">
         <form @submit.prevent="submitForm" class="formDiv">
           <label>
@@ -286,6 +286,10 @@ p {
   }
   .columnA {
     height: 100%;
+  }
+
+  form{
+    margin-bottom: 100px;
   }
 
   .formDiv {

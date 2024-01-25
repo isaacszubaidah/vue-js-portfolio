@@ -6,6 +6,16 @@
       <p class="para">CopyRights Reserved</p>
 
       <p class="para2">{{ getCurrentYear() }}</p>
+      <div>
+        <p>
+          <a target="_blank" href="https://www.linkedin.com/in/zubaidah-isaacs-1b8070281/"
+            ><i class="fa-brands fa-linkedin fa-2x" style="color: #5e5343"></i
+          ></a>
+          <a target="_blank" href="https://github.com/"
+            ><i class="fa-brands fa-github fa-2x" style="color: #5e5343"></i
+          ></a>
+        </p>
+      </div>
     </div>
   </footer>
 </template>

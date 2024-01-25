@@ -72,4 +72,19 @@ footer{
   display: flex;
   margin-right: 20px;
 }
+
+@media screen and (max-width: 480px){
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    margin-top: 10px;
+    bottom: 0;
+    background-color: #DEB887;
+}
+}
+
 </style>
