@@ -65,7 +65,7 @@
           <div class="col-3">
             <p><i class="fa-solid fa-location-dot fa-2x"></i></p>
           </div>
-          <div class="col-9"><p>Cape Town, Western Cape</p></div>
+          <div class="col-9"><p>Cape Town, Western Cape, 7764</p></div>
         </div>
         <div class="row iconRow">
           <div class="col-3">
