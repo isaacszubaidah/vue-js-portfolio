@@ -76,6 +76,7 @@ export default {};
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    margin-bottom: 40px;
     padding-left: 16px;
     padding-right: 16px;
     gap: 50px;
