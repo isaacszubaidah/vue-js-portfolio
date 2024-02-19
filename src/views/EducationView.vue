@@ -17,7 +17,7 @@
       <div class="item-1 animate-right">
         <img
           class="EducationPageImg"
-          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRmDEMj0-EdPhY6KA1atbD6nMcGODEzVF_NZCHOWZxIprioWPRnVRz15ViT7Gyk356l_nrv8cOyZH4HABLvUXE5Qx_2=s2560"
+          src="https://i.imgur.com/NcCG5TA.png"
           alt=""
         />
       </div>

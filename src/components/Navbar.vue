@@ -16,7 +16,7 @@
         <router-link class="nav-link active" aria-current="page" to="/"
           ><img
             class="logo"
-            src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTtXe4LvlEcbgX8yA8-Wsnv3R-PqrE_Y4NizziZBcH8-5qjUQTdvIoo2PuF3LM5IY9UeDcRIV6iEUonR0JBQF3qdHPkUA=s2560"
+            src="https://i.imgur.com/uzJl7cg.png"
             alt=""
         /></router-link>
         <ul class="navbar-nav centerNav">
