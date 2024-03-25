@@ -51,7 +51,7 @@ export default {};
   display: grid;
   grid: 700px / 1fr 1fr;
   align-content: center;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .item-1 img {

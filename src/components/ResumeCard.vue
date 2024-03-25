@@ -2,10 +2,10 @@
   <div class="work-card">
     <div class="header">
       <p class="heading-text">{{ resume.heading }}</p>
-      <p>{{ resume.year }}</p>
+      <p class="year">{{ resume.year }}</p>
     </div>
     <div>
-      <p>{{ resume.text }}</p>
+      <p class="text">{{ resume.text }}</p>
     </div>
   </div>
 </template>
@@ -19,9 +19,13 @@ export default {
 <style scoped>
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #5e5343;
+  font-family: 'Quicksand', sans-serif;
   gap: 5px;
+  font-weight: bold;
 }
 
 .heading-text {
@@ -40,4 +44,11 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.text{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #5b4c36;
+  font-weight: 500;
+}
+
 </style>

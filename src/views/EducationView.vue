@@ -68,6 +68,9 @@ export default {};
 .paragraphEdu {
   padding-top: 20px;
   max-width: 600px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 480px) {

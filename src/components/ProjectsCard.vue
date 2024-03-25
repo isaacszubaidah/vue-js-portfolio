@@ -9,8 +9,8 @@
             <p class="card-text">{{ project.text }}</p>
           </div>
           <div class="card-body">
-            <a :href="project.githubLink" class="card-link">Github</a>
-            <a :href="project.siteLink" class="card-link">Netlify</a>
+            <a target="_blank" :href="project.githubLink" class="card-link">Github</a>
+            <a target="_blank" :href="project.siteLink" class="card-link">Netlify</a>
           </div>
         </div>
       </div>

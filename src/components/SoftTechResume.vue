@@ -4,7 +4,7 @@
       <p class="heading-text">{{ resume.heading }}</p>
     </div>
     <div>
-      <p>{{ resume.text }}</p>
+      <p class="text">{{ resume.text }}</p>
     </div>
   </div>
 </template>
@@ -29,7 +29,12 @@ export default {
   color: #5e5343;
   font-size: 20px;
 }
-
+.text{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #5e5343;
+  font-weight: 300;
+}
 .soft-card {
   padding-top: 10px;
 }

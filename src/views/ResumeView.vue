@@ -21,11 +21,7 @@
     </div>
     <div>
       <h5>Resume Document</h5>
-      <p>Feel Free to Explore</p>
-      <a
-        href="https://docs.google.com/document/d/1UhD23rohZnc0Chtf6SPqZtM_2dVW5PRh/edit?usp=sharing&ouid=116533081415464734347&rtpof=true&sd=true"
-        ><button class="btn">Read Me</button></a
-      >
+      <p class="text">Feel Free to Explore</p>
     </div>
   </div>
 </template>
@@ -68,10 +64,7 @@ export default {
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
-.btn {
-  background-color: #5e5343;
-  color: white;
-}
+
 h5 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -97,6 +90,12 @@ h2 {
 }
 .soft {
   padding-top: 20px;
+}
+.text{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #5b4c36;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 480px) {

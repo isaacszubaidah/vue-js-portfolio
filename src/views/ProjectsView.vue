@@ -1,5 +1,6 @@
 <template>
-  <div v-if="isLoading" class="loader"></div>
+  <div v-if="isLoading" class="loader">
+  </div>
   <h1>Projects</h1>
   <div class="projects">
     <ProjectsCard

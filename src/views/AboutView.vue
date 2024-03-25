@@ -1,23 +1,31 @@
 <template>
   <div class="vh-100">
     <div class="about">
+      <h1>Who Am I ?</h1>
       <div class="item-2">
         <div class="item-3">
-          <h1>Who Am I ?</h1>
-          <p class="paragraphAbout">
-            I am the girl who likes to laugh and to make those around me smile.
-            I am hardworking and competetive in the sense of I am always willing
-            to accept a challenge. I enjoy baking and coding in my free time
-            because it makes me happy and improve in those skills.
+          <p class="paragraphAbout animate-right">
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+            Hey there! I'm Zubaidah Isaacs, a web developer passionate about crafting clean, user-friendly applications. I thrive on turning ideas into reality through coding and I'm known for my diligence and helpfulness. My fascination with technology's potential led me to dive into web development, where I enjoy tackling challenges and refining my skills. When I'm not coding, you'll find me spreading joy through baking and embracing friendly competition.<i class="fa fa-quote-right" aria-hidden="true"></i>
           </p>
         </div>
       </div>
       <div class="item-1 animate-right">
-        <img
+        <p class="text"><span class="text2">DOB:   </span>17/04/2003</p>
+        <p class="text"><span class="text2">Languages:   </span>English,Afrikaans</p>
+        <div class="btn-container">
+
+          <button class="btn">Hire Me</button>
+          <a
+          href="https://docs.google.com/document/d/1UhD23rohZnc0Chtf6SPqZtM_2dVW5PRh/edit?usp=sharing&ouid=116533081415464734347&rtpof=true&sd=true"
+          ><button class="btn">View CV</button></a
+          >
+        </div>
+        <!-- <img
           class="AboutPageImg"
           src="https://i.imgur.com/LyNUFPt.jpg"
           alt=""
-        />
+        /> -->
       </div>
     </div>
   </div>
@@ -40,18 +48,26 @@ export default {};
   }
 }
 .about {
+  margin: 0 auto;
+  width: 1000px;
   display: grid;
-  grid: 700px / 1fr 1fr;
+  grid: 100px 300px/ 600px 300px;
+  gap: 0 150px;
   align-items: center;
+}
+h1 {
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: center;
 }
 .AboutPageImg {
   border: 3px solid;
   border-radius: 60px;
-  /* margin-right: 250px; */
+  margin-right: 250px;
   width: 300px;
   height: 400px;
 }
 .item-2 {
+  grid-area: 2/1/3/2;
   font-family: "Playfair Display", serif;
   text-align: center;
   align-items: center;
@@ -61,11 +77,37 @@ export default {};
   flex-direction: column;
   font-size: 20px;
 }
+.item-1 {
+  grid-area: 2/2/3/3;
+}
+.btn {
+  background-color: #5e5343;
+  color: white;
+  border-radius: 100px;
+}
+
+.btn-container {
+  margin: 0 auto;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
 
 .paragraphAbout {
   max-width: 600px;
-  padding-top: 20px;
   margin: auto;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+.text{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+.text2{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 480px) {
