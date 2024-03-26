@@ -19,10 +19,6 @@
         :resume="sofTechResume"
       />
     </div>
-    <div>
-      <h5>Resume Document</h5>
-      <p class="text">Feel Free to Explore</p>
-    </div>
   </div>
 </template>
 

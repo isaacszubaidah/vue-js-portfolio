@@ -45,8 +45,15 @@ export default {};
 
 .education {
   display: grid;
-  grid: 700px / 1fr 1fr;
+  grid: 500px / 1fr 1fr;
   align-items: center;
+  width: 1000px;
+  margin: auto auto 200px auto;
+  gap: 90px;
+}
+
+.item-1.animate-right {
+  width: 250px;
 }
 .EducationPageImg {
   border-radius: 60px;
@@ -59,11 +66,13 @@ export default {};
   text-align: center;
   align-items: center;
   color: #5e5343;
-  gap: 30px;
+  /* gap: 30px; */
+  width: 500px;
   display: flex;
   flex-direction: column;
   font-size: 20px;
 }
+
 
 .paragraphEdu {
   padding-top: 20px;

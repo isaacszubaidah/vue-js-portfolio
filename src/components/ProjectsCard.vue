@@ -64,4 +64,7 @@ export default {
   text-decoration: underline;
   color: #5e5343;
 }
+.card-body a{
+  color: #5e5343;
+}
 </style>
