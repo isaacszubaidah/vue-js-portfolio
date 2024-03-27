@@ -5,19 +5,19 @@
         <div class="item-3">
           <h1>Education</h1>
           <p class="paragraphEdu">
-            I matriculated in the year 2020.I was the valedictorian of my class
-            that year.It was tough because of Covid and that is where I learnt
-            that nothing can stop you, once you are committed and persevere.I
-            won’t forget this quote from Hamlet , “To be or not to be” in the
-            sense of is it nobler to drown in the sea of troubles or will you
-            take arms and defeat it.
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+            I graduated from Manenberg High School in 2020, where I proudly
+            served as the valedictorian of my graduating class. This experience
+            ignited a profound realization of my leadership potential and
+            allowed me to hone my skills in guiding others.
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
           </p>
         </div>
       </div>
       <div class="item-1 animate-right">
         <img
           class="EducationPageImg"
-          src="https://i.imgur.com/NcCG5TA.png"
+          src="https://i.imgur.com/2bPGbOe.jpg"
           alt=""
         />
       </div>
@@ -57,9 +57,11 @@ export default {};
 }
 .EducationPageImg {
   border-radius: 60px;
+  border: #5e5343 5px solid;
+  box-shadow: 10px 10px 5px grey;
   /* margin-right: 250px; */
   width: 400px;
-  height: 355px;
+  height: 300px;
 }
 .item-2 {
   font-family: "Playfair Display", serif;
@@ -73,11 +75,10 @@ export default {};
   font-size: 20px;
 }
 
-
 .paragraphEdu {
   padding-top: 20px;
   max-width: 600px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 22px;
   font-weight: 300;
 }

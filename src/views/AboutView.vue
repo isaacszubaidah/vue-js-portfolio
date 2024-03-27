@@ -24,6 +24,10 @@
         <p class="text">
           <span class="text2">Languages: </span>English,Afrikaans
         </p>
+        <p class="text">
+          <span class="text2">Subjects: </span>English,Afrikaans FAL,Mathematics Literacy
+                                              Business Studies,Consumer Studies,Life Orientation,Life Science.
+        </p>
         <div class="btn-container">
           <router-link to="/contact"
             ><button class="btn">Hire Me</button></router-link
