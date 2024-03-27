@@ -33,7 +33,7 @@
             ><button class="btn">Hire Me</button></router-link
           >
 
-          <a
+          <a target="_blank"
             href="https://docs.google.com/document/d/1UhD23rohZnc0Chtf6SPqZtM_2dVW5PRh/edit?usp=sharing&ouid=116533081415464734347&rtpof=true&sd=true"
             ><button class="btn">View CV</button></a
           >
