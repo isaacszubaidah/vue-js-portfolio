@@ -1,5 +1,5 @@
 <template>
-  <div class="vh-100">
+  <div class="">
     <div class="about">
       <h1>Who Am I ?</h1>
       <div class="item-2">
@@ -72,7 +72,10 @@ export default {};
   gap: 0 150px;
   align-items: center;
   margin-top: 3%;
+  height: 100%;
+  padding-bottom: 100px;
 }
+
 h1 {
   grid-area: 1 / 1 / 2 / 3;
   text-align: center;

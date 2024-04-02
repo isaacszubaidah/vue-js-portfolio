@@ -49,7 +49,7 @@ export default {};
 
 .home {
   display: grid;
-  grid: 450px / 1fr 1fr;
+  grid: 500px / 1fr 1fr;
   align-content: center;
   padding-top: 2%;
   /* position: fixed;
