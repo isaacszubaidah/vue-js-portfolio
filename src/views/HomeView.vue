@@ -49,10 +49,13 @@ export default {};
 
 .home {
   display: grid;
-  grid: 700px / 1fr 1fr;
+  grid: 450px / 1fr 1fr;
   align-content: center;
   padding-top: 2%;
+  /* position: fixed;
+  width: 100%; */
 }
+
 
 .item-1 img {
   margin-left: 200px;
