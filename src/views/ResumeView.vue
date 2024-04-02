@@ -1,6 +1,14 @@
 <template>
   <div class="resume">
     <div v-if="isLoading" class="loader"></div>
+    <div class="school">
+      <h2>Education</h2>
+      <Education
+        v-for="Education of Education"
+        :key="Education.id"
+        :resume="Education"
+      />
+    </div>
 
     <div class="work">
       <h2>Work Experience</h2>
@@ -25,6 +33,7 @@
 <script>
 import ResumeCard from "@/components/ResumeCard.vue";
 import SofTechResume from "@/components/SoftTechResume.vue";
+import Education from "@/components/Education.vue"
 
 export default {
   computed: {
@@ -38,6 +47,11 @@ export default {
         (resume) => resume.type === "softTech"
       );
     },
+    Education() {
+      return (this.$store.state.resume || []).filter(
+        (resume) => resume.type === "school"
+      );
+    },
     isLoading() {
       return this.$store.state.loading;
     },
@@ -45,7 +59,7 @@ export default {
   mounted() {
     this.$store.dispatch("getResume");
   },
-  components: { ResumeCard, SofTechResume },
+  components: { ResumeCard, SofTechResume ,Education},
 };
 </script>
 
@@ -85,6 +99,9 @@ h2 {
   padding-top: 20px;
 }
 .soft {
+  padding-top: 20px;
+}
+.school {
   padding-top: 20px;
 }
 .text{

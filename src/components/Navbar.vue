@@ -34,16 +34,8 @@
             <router-link
               class="nav-link active"
               aria-current="page"
-              to="/education"
-              >Education |</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link
-              class="nav-link active"
-              aria-current="page"
               to="/resume"
-              >Resume |
+              >Education & Experience |
             </router-link>
           </li>
           <li class="nav-item">
