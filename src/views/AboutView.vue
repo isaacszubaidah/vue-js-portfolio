@@ -1,6 +1,6 @@
 <template>
   <div class>
-    <div class="about d-flex flex-column mt-5 ">
+    <div class="about d-flex flex-column mt-4 ">
       <h1 class="title col-12 ">Who Am I ?</h1>
       <div class="row mt-4">
         <div class="col-sm-12 col-lg-6 item-2">
@@ -92,7 +92,7 @@ export default {};
   width: 250px;
   display: flex;
   justify-content: space-between;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .paragraphAbout {
@@ -116,13 +116,8 @@ export default {};
 
 @media screen and (max-width: 480px) {
   .about {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    gap: 50px;
+   height:100vh;
+   margin-bottom: 80px;
   }
  
 
