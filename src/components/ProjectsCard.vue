@@ -10,7 +10,7 @@
           </div>
           <div class="card-body">
             <a target="_blank" :href="project.githubLink" class="card-link">Github</a>
-            <a target="_blank" :href="project.siteLink" class="card-link">Netlify</a>
+            <a target="_blank" :href="project.siteLink" class="card-link">Site Link</a>
           </div>
         </div>
       </div>

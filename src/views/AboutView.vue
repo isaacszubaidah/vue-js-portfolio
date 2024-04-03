@@ -25,24 +25,21 @@
           <span class="text2">Languages: </span>English,Afrikaans
         </p>
         <p class="text">
-          <span class="text2">Subjects: </span>English,Afrikaans FAL,Mathematics Literacy
-                                              Business Studies,Consumer Studies,Life Orientation,Life Science.
+          <span class="text2">Subjects: </span>English,Afrikaans FAL,Mathematics
+          Literacy Business Studies,Consumer Studies,Life Orientation,Life
+          Science.
         </p>
         <div class="btn-container">
           <router-link to="/contact"
             ><button class="btn">Hire Me</button></router-link
           >
 
-          <a target="_blank"
+          <a
+            target="_blank"
             href="https://docs.google.com/document/d/1UhD23rohZnc0Chtf6SPqZtM_2dVW5PRh/edit?usp=sharing&ouid=116533081415464734347&rtpof=true&sd=true"
             ><button class="btn">View CV</button></a
           >
         </div>
-        <!-- <img
-          class="AboutPageImg"
-          src="https://i.imgur.com/LyNUFPt.jpg"
-          alt=""
-        /> -->
       </div>
     </div>
   </div>
@@ -64,45 +61,40 @@ export default {};
     transform: translateX(0);
   }
 }
+
 .about {
   margin: 0 auto;
-  width: 1000px;
+  max-width: 100%;
+  padding: 0 20px;
   display: grid;
-  grid: 100px 300px/ 600px 300px;
-  gap: 0 150px;
+  grid-template-rows: auto auto;
   align-items: center;
+  gap: 50px;
   margin-top: 3%;
-  height: 100%;
   padding-bottom: 100px;
 }
 
 h1 {
-  grid-area: 1 / 1 / 2 / 3;
   text-align: center;
   color: #5e5343;
   font-family: "Playfair Display", serif;
 }
-.AboutPageImg {
-  border: 3px solid;
-  border-radius: 60px;
-  margin-right: 250px;
-  width: 300px;
-  height: 400px;
-}
+
+.item-1,
 .item-2 {
-  grid-area: 2/1/3/2;
-  font-family: "Playfair Display", serif;
   text-align: center;
-  align-items: center;
+}
+
+.item-1 {
+  grid-row: 2;
+}
+
+.item-2 {
+  font-family: "Playfair Display", serif;
   color: #5e5343;
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
   font-size: 20px;
 }
-.item-1 {
-  grid-area: 2/2/3/3;
-}
+
 .btn {
   background-color: #5e5343;
   color: white;
@@ -111,7 +103,8 @@ h1 {
 
 .btn-container {
   margin: 0 auto;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
@@ -124,10 +117,12 @@ h1 {
   font-size: 22px;
   font-weight: 300;
 }
+
 .text {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
 }
+
 .text2 {
   font-family: "Playfair Display", serif;
   color: #5e5343;
@@ -136,34 +131,25 @@ h1 {
 
 @media screen and (max-width: 480px) {
   .about {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    gap: 50px;
+    grid-template-rows: auto auto auto;
+    gap: 30px;
+  }
+  .item-1,
+  .item-2 {
+    grid-row: auto;
+  }
+
+  .btn-container {
+    width: 100%;
   }
 
   .AboutPageImg {
+    max-width: 300px;
+    height: auto;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 30px;
-    width: 300px;
-    height: 300px;
   }
 
   .item-2 {
-    font-family: "Playfair Display", serif;
-    text-align: center;
-    align-items: center;
-    color: #5e5343;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
     font-size: 14px;
   }
 }
