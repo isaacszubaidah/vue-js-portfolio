@@ -99,7 +99,8 @@ h2 {
   padding-top: 20px;
 }
 .soft {
-  padding-top: 20px;
+  padding-top: 10px;
+  margin-bottom: 60px;
 }
 .school {
   padding-top: 20px;

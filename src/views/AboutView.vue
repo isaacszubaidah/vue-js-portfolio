@@ -2,7 +2,7 @@
   <div class>
     <div class="about d-flex flex-column mt-4 ">
       <h1 class="title col-12 ">Who Am I ?</h1>
-      <div class="row mt-4">
+      <div class="row">
         <div class="col-sm-12 col-lg-6 item-2">
           <div class="item-3">
             <p class="paragraphAbout animate-right">
@@ -71,7 +71,9 @@ export default {};
   color: #5e5343;
   font-family: "Playfair Display", serif;
 }
-
+.row{
+  margin-top: 6%;
+}
 .item-1,
 .item-2 {
   text-align: center;
