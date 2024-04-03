@@ -9,11 +9,12 @@
         aria-controls="navbarTogglerDemo01"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        @click="toggleNavbar"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <router-link class="nav-link active" aria-current="page" to="/"
+      <div :class="{'collapse': !isNavbarOpen, 'navbar-collapse': true}" id="navbarTogglerDemo01">
+        <router-link @click.native="closeNavbar" class="nav-link active" aria-current="page" to="/"
           ><img
             class="logo"
             src="https://i.imgur.com/uzJl7cg.png"
@@ -21,46 +22,34 @@
         /></router-link>
         <ul class="navbar-nav centerNav">
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/"
+            <router-link @click.native="closeNavbar" class="nav-link active" aria-current="page" to="/"
               >Home |</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/about"
+            <router-link @click.native="closeNavbar" class="nav-link active" aria-current="page" to="/about"
               >About |</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link
-              class="nav-link active"
-              aria-current="page"
-              to="/resume"
-              >Education & Experience |
-            </router-link>
+            <router-link @click.native="closeNavbar" class="nav-link active" aria-current="page" to="/resume"
+              >Education & Experience |</router-link
+            >
           </li>
           <li class="nav-item">
-            <router-link
-              class="nav-link active"
-              aria-current="page"
-              to="/projects"
+            <router-link @click.native="closeNavbar" class="nav-link active" aria-current="page" to="/projects"
               >Projects |</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link
-              class="nav-link active"
-              aria-current="page"
-              to="/testimonials"
+            <router-link @click.native="closeNavbar" class="nav-link active" aria-current="page" to="/testimonials"
               >Testimonials |</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link
-              class="nav-link active"
-              aria-current="page"
-              to="/contact"
-              >Contact
-            </router-link>
+            <router-link @click.native="closeNavbar" class="nav-link active" aria-current="page" to="/contact"
+              >Contact</router-link
+            >
           </li>
         </ul>
       </div>
@@ -74,6 +63,19 @@ export default {
   props: {
     msg: String,
   },
+  data() {
+    return {
+      isNavbarOpen: false
+    };
+  },
+  methods: {
+    toggleNavbar() {
+      this.isNavbarOpen = !this.isNavbarOpen;
+    },
+    closeNavbar() {
+      this.isNavbarOpen = false;
+    }
+  }
 };
 </script>
 
@@ -86,3 +88,4 @@ export default {
   margin-left: auto;
 }
 </style>
+
