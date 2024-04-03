@@ -1,8 +1,8 @@
 <template>
   <div class>
-    <div class="about d-flex flex-column ">
+    <div class="about d-flex flex-column mt-5 ">
       <h1 class="title col-12 ">Who Am I ?</h1>
-      <div class="row">
+      <div class="row mt-4">
         <div class="col-sm-12 col-lg-6 item-2">
           <div class="item-3">
             <p class="paragraphAbout animate-right">
@@ -28,7 +28,9 @@
           </p>
           <p class="text">
             <span class="text2">Subjects: </span>English,Afrikaans
-            FAL,Mathematics Literacy Business Studies,Consumer Studies,Life
+            FAL, Mathematics Literacy,<br>
+             Business Studies,
+            Consumer Studies,Life
             Orientation,Life Science.
           </p>
           <div class="btn-container">
@@ -62,9 +64,6 @@ export default {};
   100% {
     transform: translateX(0);
   }
-}
-.about{
-  margin-top: 6%;
 }
 
 .title {
