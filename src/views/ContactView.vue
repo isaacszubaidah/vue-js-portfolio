@@ -272,6 +272,7 @@ p {
     flex-direction: column-reverse;
     gap: 20px;
     align-items: center;
+    overflow: hidden;
   }
 
   .subhead {
@@ -298,6 +299,8 @@ p {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
+    
   }
+  
 }
 </style>

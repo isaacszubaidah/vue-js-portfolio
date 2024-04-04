@@ -1,7 +1,7 @@
 <template>
   <div class>
-    <div class="about d-flex flex-column mt-4 ">
-      <h1 class="title col-12 ">Who Am I ?</h1>
+    <div class="about d-flex flex-column mt-4">
+      <h1 class="title col-12">Who Am I ?</h1>
       <div class="row">
         <div class="col-sm-12 col-lg-6 item-2">
           <div class="item-3">
@@ -27,11 +27,9 @@
             <span class="text2">Languages: </span>English,Afrikaans
           </p>
           <p class="text">
-            <span class="text2">Subjects: </span>English,Afrikaans
-            FAL, Mathematics Literacy,<br>
-             Business Studies,
-            Consumer Studies,Life
-            Orientation,Life Science.
+            <span class="text2">Subjects: </span>English, Afrikaans FAL,
+            Mathematics Literacy,<br />
+            Business Studies, Consumer Studies, Life Orientation, Life Science.
           </p>
           <div class="btn-container">
             <router-link to="/contact"
@@ -39,7 +37,7 @@
             >
             <a
               target="_blank"
-              href="https://docs.google.com/document/d/1UhD23rohZnc0Chtf6SPqZtM_2dVW5PRh/edit?usp=sharing&ouid=116533081415464734347&rtpof=true&sd=true"
+              href="https://gold-linzy-20.tiiny.site"
               ><button class="btn">View CV</button></a
             >
           </div>
@@ -71,7 +69,7 @@ export default {};
   color: #5e5343;
   font-family: "Playfair Display", serif;
 }
-.row{
+.row {
   margin-top: 6%;
 }
 .item-1,
@@ -81,7 +79,6 @@ export default {};
   color: #5e5343;
   font-size: 18px;
 }
-
 
 .btn {
   background-color: #5e5343;
@@ -118,10 +115,9 @@ export default {};
 
 @media screen and (max-width: 480px) {
   .about {
-   height:100vh;
-   margin-bottom: 80px;
+    height: 100vh;
+    margin-bottom: 80px;
   }
- 
 
   .item-2 {
     font-size: 16px;
