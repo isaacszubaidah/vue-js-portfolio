@@ -3,7 +3,11 @@
   <h1>References</h1>
   <p>Scroll sideways to view more</p>
   <div class="testimonialContainer">
-    <div class="testimonials">
+    <div class="arrows">
+      <i class="fa-solid fa-arrow-left" @click="scrollLeft"></i>
+      <i class="fa-solid fa-arrow-right" @click="scrollRight"></i>
+    </div>
+    <div class="testimonials" ref="testimonialsContainer">
       <TestimonialsCard
         v-for="testimonials of testimonials"
         :key="testimonials.id"
@@ -28,11 +32,39 @@ export default {
   mounted() {
     this.$store.dispatch("getTestimonials");
   },
+  methods: {
+    scrollLeft() {
+      this.$refs.testimonialsContainer.scrollLeft -= 100; // Adjust scroll amount as needed
+    },
+    scrollRight() {
+      this.$refs.testimonialsContainer.scrollLeft += 100; // Adjust scroll amount as needed
+    }
+  },
   components: { TestimonialsCard },
 };
 </script>
 
 <style scoped>
+.testimonialContainer {
+  display: grid;
+  grid: 1fr/1fr;
+}
+
+.arrows,.testimonials {
+  grid-area: 1/1/2/2;
+  place-items: center;
+}
+.testimonials {
+  z-index: -2;
+}
+.arrows {
+  z-index: 2;
+  display: flex;
+  place-content: center space-between;
+  width: 1250px;
+  margin: 0 auto;
+  color: black;
+}
 .loader {
   width: 40px;
   height: 40px;
