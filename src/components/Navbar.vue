@@ -43,7 +43,7 @@
           </li>
           <li class="nav-item">
             <router-link @click.native="closeNavbar" class="nav-link active" aria-current="page" to="/testimonials"
-              >Testimonials |</router-link
+              >References |</router-link
             >
           </li>
           <li class="nav-item">
