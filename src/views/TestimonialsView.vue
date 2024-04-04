@@ -3,7 +3,7 @@
   <h1>References</h1>
   <p>Scroll sideways to view more</p>
   <div class="testimonialContainer">
-    <div class="arrows">
+    <div class="arrows" v-if="showArrows">
       <i class="fa-solid fa-arrow-left" @click="scrollLeft"></i>
       <i class="fa-solid fa-arrow-right" @click="scrollRight"></i>
     </div>
@@ -21,6 +21,11 @@
 import TestimonialsCard from "@/components/TestimonialsCard.vue";
 
 export default {
+  data() {
+    return {
+      showArrows: true
+    };
+  },
   computed: {
     testimonials() {
       return this.$store.state.testimonials;
@@ -31,13 +36,21 @@ export default {
   },
   mounted() {
     this.$store.dispatch("getTestimonials");
+    this.checkScreenWidth();
+    window.addEventListener('resize', this.checkScreenWidth);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.checkScreenWidth);
   },
   methods: {
     scrollLeft() {
-      this.$refs.testimonialsContainer.scrollLeft -= 100; // Adjust scroll amount as needed
+      this.$refs.testimonialsContainer.scrollLeft -= 100; 
     },
     scrollRight() {
-      this.$refs.testimonialsContainer.scrollLeft += 100; // Adjust scroll amount as needed
+      this.$refs.testimonialsContainer.scrollLeft += 100; 
+    },
+    checkScreenWidth() {
+      this.showArrows = window.innerWidth > 480;
     }
   },
   components: { TestimonialsCard },
@@ -128,6 +141,9 @@ p {
     margin-left: auto;
     gap: 20px;
     padding-bottom: 0;
+  }
+  .arrows {
+    display: none;
   }
 }
 
