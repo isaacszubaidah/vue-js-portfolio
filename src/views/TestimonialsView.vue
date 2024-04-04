@@ -1,6 +1,6 @@
 <template>
   <div v-if="isLoading" class="loader"></div>
-  <h1>Testimonials</h1>
+  <h1>References</h1>
   <p>Scroll sideways to view more</p>
   <div class="testimonialContainer">
     <div class="testimonials">
