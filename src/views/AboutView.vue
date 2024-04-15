@@ -37,7 +37,7 @@
             >
             <a
               target="_blank"
-              href="https://gold-linzy-20.tiiny.site"
+              href="https://ivory-lavina-83.tiiny.site"
               ><button class="btn">View CV</button></a
             >
           </div>
