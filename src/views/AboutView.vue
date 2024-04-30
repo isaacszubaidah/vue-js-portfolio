@@ -39,7 +39,7 @@
               target="_blank"
               href="https://ivory-lavina-83.tiiny.site"
               ><button class="btn">View CV</button></a
-            >
+            > 
           </div>
         </div>
       </div>
