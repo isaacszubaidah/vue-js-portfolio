@@ -50,9 +50,10 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    position: sticky;
+    position: fixed;
     margin-top: 10px;
     bottom: 0;
+    left: 0;
     background-color: #DEB887;
 }
 

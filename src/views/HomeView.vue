@@ -52,6 +52,7 @@ export default {};
   grid: 500px / 1fr 1fr;
   align-content: center;
   padding-top: 2%;
+  /* height: 100vh; */
   /* position: fixed;
   width: 100%; */
 }

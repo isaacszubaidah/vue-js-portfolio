@@ -11,7 +11,7 @@
           <a target="_blank" href="https://www.linkedin.com/in/zubaidah-isaacs-1b8070281/"
             ><i class="fa-brands fa-linkedin fa-2x" style="color: #5e5343"></i
           ></a>
-          <a target="_blank" href="https://github.com/"
+          <a target="_blank" href="https://github.com/isaacszubaidah"
             ><i class="fa-brands fa-github fa-2x" style="color: #5e5343"></i
           ></a>
         </p>
@@ -52,4 +52,5 @@ p {
   padding-top: auto;
   padding-bottom: auto;
 }
+
 </style>

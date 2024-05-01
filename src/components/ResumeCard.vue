@@ -38,7 +38,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   max-width: 1220px;
-  width: 50%;
+  /* width: 50%; */
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -50,5 +50,7 @@ export default {
   color: #5b4c36;
   font-weight: 500;
 }
-
+@media screen {
+  
+}
 </style>

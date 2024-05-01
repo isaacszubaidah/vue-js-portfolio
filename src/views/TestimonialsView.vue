@@ -1,9 +1,13 @@
 <template>
   <div v-if="isLoading" class="loader"></div>
-  <h1>Testimonials</h1>
+  <h1>References</h1>
   <p>Scroll sideways to view more</p>
   <div class="testimonialContainer">
-    <div class="testimonials">
+    <div class="arrows" v-if="showArrows">
+      <i class="fa-solid fa-arrow-left" @click="scrollLeft"></i>
+      <i class="fa-solid fa-arrow-right" @click="scrollRight"></i>
+    </div>
+    <div class="testimonials" ref="testimonialsContainer">
       <TestimonialsCard
         v-for="testimonials of testimonials"
         :key="testimonials.id"
@@ -17,6 +21,11 @@
 import TestimonialsCard from "@/components/TestimonialsCard.vue";
 
 export default {
+  data() {
+    return {
+      showArrows: true
+    };
+  },
   computed: {
     testimonials() {
       return this.$store.state.testimonials;
@@ -27,12 +36,48 @@ export default {
   },
   mounted() {
     this.$store.dispatch("getTestimonials");
+    this.checkScreenWidth();
+    window.addEventListener('resize', this.checkScreenWidth);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.checkScreenWidth);
+  },
+  methods: {
+    scrollLeft() {
+      this.$refs.testimonialsContainer.scrollLeft -= 100; 
+    },
+    scrollRight() {
+      this.$refs.testimonialsContainer.scrollLeft += 100; 
+    },
+    checkScreenWidth() {
+      this.showArrows = window.innerWidth > 480;
+    }
   },
   components: { TestimonialsCard },
 };
 </script>
 
 <style scoped>
+.testimonialContainer {
+  display: grid;
+  grid: 1fr/1fr;
+}
+
+.arrows,.testimonials {
+  grid-area: 1/1/2/2;
+  place-items: center;
+}
+.testimonials {
+  z-index: -2;
+}
+.arrows {
+  z-index: 2;
+  display: flex;
+  place-content: center space-between;
+  width: 1250px;
+  margin: 0 auto;
+  color: black;
+}
 .loader {
   width: 40px;
   height: 40px;
@@ -96,6 +141,9 @@ p {
     margin-left: auto;
     gap: 20px;
     padding-bottom: 0;
+  }
+  .arrows {
+    display: none;
   }
 }
 
