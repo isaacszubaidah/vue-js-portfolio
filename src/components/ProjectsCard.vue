@@ -9,7 +9,7 @@
             <p class="card-text">{{ project.text }}</p>
           </div>
           <div class="card-body">
-            <a target="_blank" :href="project.githubLink" class="card-link">Github</a>
+            <a v-if="project.id !== 7" target="_blank"  :href="project.githubLink" class="card-link">Github</a>
             <a target="_blank" :href="project.siteLink" class="card-link">Site Link</a>
           </div>
         </div>
