@@ -35,7 +35,7 @@ export default {
 }
 .card-text {
   font-size: 14px;
-  padding-top: 5px;
+  padding-top: 2px;
   height: 100px;
 }
 
@@ -44,7 +44,7 @@ export default {
 }
 .card {
   width: 18rem;
-  height: 25rem;
+  height: 28rem;
   box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
   padding: 16px;
