@@ -9,7 +9,7 @@
             <p class="card-text">{{ project.text }}</p>
           </div>
           <div class="card-body">
-            <a target="_blank" :href="project.githubLink" class="card-link">Github</a>
+            <a v-if="project.id !== 7" target="_blank"  :href="project.githubLink" class="card-link">Github</a>
             <a target="_blank" :href="project.siteLink" class="card-link">Site Link</a>
           </div>
         </div>
@@ -35,7 +35,7 @@ export default {
 }
 .card-text {
   font-size: 14px;
-  padding-top: 5px;
+  padding-top: 2px;
   height: 100px;
 }
 
@@ -44,7 +44,7 @@ export default {
 }
 .card {
   width: 18rem;
-  height: 25rem;
+  height: 28rem;
   box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
   padding: 16px;
