@@ -9,7 +9,7 @@
             <p class="card-text">{{ project.text }}</p>
           </div>
           <div class="card-body">
-            <a v-if="project.id !== 7" target="_blank"  :href="project.githubLink" class="card-link">Github</a>
+           <a v-if="![7, 8, 9].includes(project.id)" target="_blank" :href="project.githubLink" class="card-link">Github</a>
             <a target="_blank" :href="project.siteLink" class="card-link">Site Link</a>
           </div>
         </div>
@@ -66,5 +66,6 @@ export default {
 }
 .card-body a{
   color: #5e5343;
+  /* padding-bottom: 20px; */
 }
 </style>
